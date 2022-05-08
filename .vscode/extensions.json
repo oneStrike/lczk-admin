@@ -1,0 +1,16 @@
+{
+  "recommendations": ["vue.volar", "vue.vscode-typescript-vue-plugin"],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true, //默认配置
+    "**/.history": true //被禁止搜寻的文件/文件夹
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true, //默认配置
+    "**/.history": true //被禁止看见的文件/文件夹
+  }
+}

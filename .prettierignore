@@ -1,0 +1,10 @@
+/dist/*
+.local
+.history
+.output.js
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*
