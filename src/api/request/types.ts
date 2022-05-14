@@ -2,13 +2,21 @@ import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 
 export interface IResponseData {
   code: number
-  data?: object | unknown[] | string | number
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  data?: any
   status: number
-  message: string
+  msg: string
+}
+
+export type errorConfig = {
+  code: string
+  msg: string
+  config: Omit<errorConfig, 'config'>[]
 }
 
 export interface IRequestConfig extends AxiosRequestConfig {
   showLoading?: boolean
+  interceptError?: errorConfig
   interceptor?: {
     requestInterceptor?: (config: AxiosRequestConfig) => AxiosRequestConfig
     requestInterceptorCatch?: (error: unknown) => unknown

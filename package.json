@@ -14,7 +14,9 @@
   "dependencies": {
     "axios": "^0.27.2",
     "element-plus": "^2.1.11",
+    "md5": "^2.3.0",
     "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
     "vue": "^3.2.33",
     "vue-router": "^4.0.13"
@@ -24,6 +26,7 @@
     "@commitlint/config-conventional": "^16.2.4",
     "@rushstack/eslint-patch": "^1.1.0",
     "@types/node": "^16.11.27",
+    "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",
@@ -41,6 +44,7 @@
     "unplugin-auto-import": "^0.7.1",
     "unplugin-vue-components": "^0.19.3",
     "vite": "^2.9.5",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-style-import": "^2.0.0",
     "vue-tsc": "^0.34.7"
   },

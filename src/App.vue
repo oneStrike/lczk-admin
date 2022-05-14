@@ -1,11 +1,13 @@
 <template>
-  <div class="container"></div>
+  <div class="app">
+    <el-config-provider :locale="zhCn">
+      <router-view></router-view>
+    </el-config-provider>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import zhCn from 'element-plus/lib/locale/lang/zh-cn'
+</script>
 
-<style scoped lang="scss">
-div {
-  font-size: 48px;
-}
-</style>
+<style scoped lang="scss"></style>
