@@ -51,7 +51,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '/images': 'src/assets/images'
+      '/images': './src/assets/images'
     }
   },
   server: {
@@ -62,6 +62,10 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/foo/, '')
       }
     }
+  },
+  esbuild: {
+    pure: ['console.log'],
+    minify: true
   },
   build: {
     rollupOptions: {
@@ -74,12 +78,6 @@ export default defineConfig({
             return id.toString().split('node_modules/')[1].split('/')[0].toString()
           }
         }
-      }
-    },
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
       }
     }
   }

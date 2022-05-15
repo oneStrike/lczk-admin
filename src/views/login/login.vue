@@ -100,6 +100,7 @@ const btnLoading = ref(false)
 const ruleForm = ref<FormInstance>()
 
 onMounted(() => {
+  console.log(123)
   getCaptcha()
 })
 
